@@ -3,7 +3,7 @@ const connection = require('./database/database')
 const categoriesController = require("./categories/categoriesController")
 const articlesController = require("./articles/ArticlesController")
 const Article = require('./articles/article')
-const Category = require("./categories/category")
+const Category = require('./categories/category')
 
 const app = express();
 
