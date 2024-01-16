@@ -1,5 +1,7 @@
 const express = require("express")
 const connection = require('./database/database')
+const categoriesController = require("./categories/categoriesController")
+const articlesController = require("./article/articles")
 
 const app = express();
 
@@ -16,6 +18,10 @@ connection
     }).catch((error) => {
         console.log(error)
     })
+
+app.use('/', categoriesController)
+app.use('/', articlesController)
+
 
 app.get("/", (req, res) =>{
     res.render("index")
