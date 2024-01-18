@@ -4,6 +4,8 @@ const categoriesController = require("./categories/categoriesController")
 const articlesController = require("./articles/ArticlesController")
 const Article = require('./articles/article')
 const Category = require('./categories/category')
+const User = require("./user/user")
+const userController = require('./user/userController')
 
 const app = express();
 
@@ -23,6 +25,8 @@ connection
 
 app.use('/', categoriesController)
 app.use('/', articlesController)
+app.use('/', userController)
+
 
 
 app.get("/", (req, res) =>{
