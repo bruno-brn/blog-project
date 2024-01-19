@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express = require("express")
 const connection = require('./database/database')
+const session = require('express-session')
 const categoriesController = require("./categories/categoriesController")
 const articlesController = require("./articles/ArticlesController")
 const Article = require('./articles/article')
@@ -10,6 +12,11 @@ const userController = require('./user/userController')
 const app = express();
 
 app.set('view engine','ejs')
+
+app.use(session({
+    secret: process.env.SECRET_KEY, cookie: {maxAge: 3000000}
+}))
+
 
 app.use(express.static('public'))
 
@@ -26,7 +33,6 @@ connection
 app.use('/', categoriesController)
 app.use('/', articlesController)
 app.use('/', userController)
-
 
 
 app.get("/", (req, res) =>{
