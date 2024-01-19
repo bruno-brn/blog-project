@@ -1,4 +1,4 @@
-# 📝 Blog Escritor e eeditor de artigos e categorias
+# 📝 Blog Escritor e editor de artigos e categorias
 
 Este é um blog onde os usuários podem criar, atualizar, deletar e editar categorias e artigos. Ele possui um editor de texto TinyMCE, controle de sessões e autenticação.
 
