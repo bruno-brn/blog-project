@@ -71,10 +71,10 @@ Os usuários autenticados podem:
 ### Artigos 
 
 Com o editor de texto TinyMCE, os usuários podem:
-✏️ Escrever artigos ricos em formatação.
-✏️ Atualizar seus próprios artigos.
-✏️ Deletar artigos.
-✏️ Visualizar todos os artigos publicados.
+- ✏️ Escrever artigos ricos em formatação.
+- ✏️ Atualizar seus próprios artigos.
+- ✏️ Deletar artigos.
+- ✏️ Visualizar todos os artigos publicados.
 
 ## 🔐 Autenticação 
 
